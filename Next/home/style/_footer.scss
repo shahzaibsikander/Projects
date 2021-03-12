@@ -1,0 +1,30 @@
+.perInfo{
+    color: #fff;
+    display: flex;
+    // margin-top: rem ;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+
+    &__sec {
+         & h3{
+             font-size: 1.5rem;
+            //  margin-bottom: 2rem;
+         }
+         & ul li{
+             list-style: none;
+             margin: 0.3rem 0;
+
+             & a{
+                 text-decoration: none;
+                 color: #fff;
+                 font-size: 1rem;
+
+                 &:hover{
+                     color: grey;
+                 }
+             }
+         }
+
+    }
+
+}

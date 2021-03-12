@@ -1,0 +1,96 @@
+.myServices{
+    display: inline-flex;
+    width: 100%;
+    height: 30rem;
+    padding-top: 6rem;
+    justify-content: center;
+    position: relative;
+
+
+    &__leftBox{
+        width: 70%;
+        text-align: center;
+        line-height: 2rem;
+        padding: 4rem;
+
+        & h3{
+            text-decoration: underline;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+        & p{
+            font-size: 1.5rem;
+        }
+    }
+    &__rightBox{
+        width: 25%;
+        margin-left: 5rem;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+        justify-content: center;
+        line-height: 3rem;
+        & P{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.fixedImg{
+    background: url(../Images/pexels-photo-310435.jpeg) repeat  100%;
+    background-attachment: fixed;
+
+    &__fixedInner{
+        padding-top:17%;
+         
+     }
+ }
+
+ .exp{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+
+    &__content{
+        padding-top: 8rem;
+        line-height: 2.5rem;
+        
+        & h3{
+            padding-bottom: 2rem;
+            text-decoration: underline;
+            font-size: 2rem;
+        }
+        & p{
+            font-size: 1rem;
+        }
+
+       & i{
+            font-size: 2.5rem;
+            margin-top: 3rem;
+            margin-left: 5rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+           
+            &:hover{
+                border-radius: 5rem;
+                background-color: #f1f1f1;
+                color: #fff;
+         }
+        }
+     }
+     &__bottom{
+        width: 100%;
+        height: 3rem;
+        background: black;
+        color: lightgray;
+        font-size: 1.2rem;
+        justify-content: center;
+        padding-top: .8rem;
+
+        & p{
+            font-size: 1rem;
+        }
+    }
+}
+ 

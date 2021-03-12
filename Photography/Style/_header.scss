@@ -1,0 +1,98 @@
+// .header{
+//     height: 100vh;
+//     background-color: #fff;
+.slider{
+    // position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    
+
+
+    &__slides{
+        width: 500%;
+        height: 100vh;
+        display: flex;
+        // align-items: center;
+
+
+        
+        &--slideImg{
+            width: 20%;
+            height: 100vh;
+            transition: 2s;
+
+            & img{
+                width: 100%;
+                height: 100vh;
+            }
+        }
+        & input{
+            display: none;
+        }
+        & #radio1:checked ~ .first{
+            margin-left: 0;
+        }
+        & #radio2:checked ~ .first{
+            margin-left: -20%;
+        }
+        & #radio3:checked ~ .first{
+            margin-left: -40%;
+        }
+        & #radio4:checked ~ .first{
+            margin-left: -60%;
+        }
+
+        & #radio1:checked ~ &--autoNav .autoBtn1{
+            background-color: #fff;
+        }
+        & #radio2:checked ~ &--autoNav .autoBtn2{
+            background-color: #fff;
+        }
+        & #radio3:checked ~ &--autoNav .autoBtn3{
+            background-color: #fff;
+        }
+        & #radio4:checked ~ &--autoNav .autoBtn4{
+            background-color: #fff;
+        }
+
+       &--autoNav{
+           position: absolute;
+           bottom: 12px;
+           left: 50%;
+           display: flex;
+           transform: translateX(-50%);
+
+           & div{
+            position: relative;
+            border: 1px solid #fff;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 0 1.5rem;
+           }
+       }
+         
+       
+    }
+    &__manNav{
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        display: flex;
+        transform: translateX(-50%);
+
+        & .manBtn{
+            border: 1px solid #fff;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 0 1.5rem;
+         &:hover{
+             background-color: #fff;
+         }  
+        }
+       
+
+    }
+}
+// }
